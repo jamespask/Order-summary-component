@@ -98,7 +98,7 @@ main {
 .plan {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 6px;
 }
 
 .annual__plan {
@@ -239,6 +239,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .plan {
+    gap: 3px;
   }
 
   .detail__wrapper {
