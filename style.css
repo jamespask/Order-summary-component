@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #e0e8ff;
+}
+
+p {
+  font-size: 16px;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 450px;
+  border-radius: 20px 20px 20px 20px;
+  background: #ffffff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  margin-bottom: 0;
+}
+
+.img__container {
+  width: 450px;
+  height: 220px;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url(./images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  color: #1f2e55;
+  margin-top: 45px;
+  margin-bottom: 17px;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #717fa6;
+  margin-top: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 0;
+}
+
+.plan__panel {
+  background: #f7f9ff;
+  border-radius: 11px;
+}
+
+.plan__wrapper {
+  padding-top: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel__flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.annual__plan {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1f2e55;
+}
+
+.price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #717fa6;
+}
+.change__plan {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #382ae1;
+}
+
+.change__plan:hover {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #766cf1;
+}
+
+.detail__wrapper {
+  border-radius: 11px;
+  margin-left: 48px;
+  margin-right: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__button {
+  margin-top: 32px;
+  background: #382ae1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment__button:hover {
+  background: #766cf1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+}
+
+.payment__text {
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cancel__order__container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 48px;
+}
+
+.cancel__order {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #717fa6;
+  text-decoration: none;
+}
+
+.cancel__order:hover {
+  color: #1f2e55;
+}
+
+@media screen and (max-width: 880px) {
+  .card {
+    width: 327px;
+  }
+
+  .img__container {
+    width: 327px;
+    height: 160px;
+  }
+
+  .order__summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #1f2e55;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #717fa6;
+    margin-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .plan__wrapper {
+    padding-top: 17px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .detail__wrapper {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .payment__button {
+    margin-top: 24px;
+  }
+
+  .cancel__order__container {
+    margin-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .annual__plan {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .price {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .change__plan {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
