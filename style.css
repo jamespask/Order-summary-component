@@ -273,4 +273,12 @@ main {
     font-size: 13px;
     line-height: 17px;
   }
+
+  .change__plan:hover {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    color: #766cf1;
+  }
 }
